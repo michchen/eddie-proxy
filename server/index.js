@@ -1,13 +1,12 @@
 const express = require('express');
 const app = express();
 
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const compression = require('compression');
-
 const router = require('./routes.js');
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(compression());
 
